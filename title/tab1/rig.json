@@ -1,0 +1,157 @@
+{
+  "scale": 0.13288,
+  "retina": 2,
+  "w": 160,
+  "h": 210.6,
+  "art": {
+    "head": {
+      "src": "head.webp",
+      "w": 118.0,
+      "h": 100.9,
+      "px": 59.0,
+      "py": 100.9
+    },
+    "band": {
+      "src": "band.webp",
+      "w": 66.4,
+      "h": 13.6,
+      "px": 33.2,
+      "py": 6.8
+    },
+    "torso": {
+      "src": "torso.webp",
+      "w": 64.8,
+      "h": 64.2,
+      "px": 32.4,
+      "py": 32.1
+    },
+    "armL": {
+      "src": "armL.webp",
+      "w": 32.0,
+      "h": 74.5,
+      "px": 19.7,
+      "py": 9.0
+    },
+    "armR": {
+      "src": "armR.webp",
+      "w": 30.8,
+      "h": 74.3,
+      "px": 12.4,
+      "py": 8.9
+    },
+    "legL": {
+      "src": "legL.webp",
+      "w": 16.3,
+      "h": 50.4,
+      "px": 8.3,
+      "py": 5.8
+    },
+    "legR": {
+      "src": "legR.webp",
+      "w": 16.9,
+      "h": 50.2,
+      "px": 7.9,
+      "py": 6.0
+    },
+    "footL": {
+      "src": "footL.webp",
+      "w": 27.2,
+      "h": 14.1,
+      "px": 15.5,
+      "py": 1.6
+    },
+    "footR": {
+      "src": "footR.webp",
+      "w": 27.1,
+      "h": 14.2,
+      "px": 10.8,
+      "py": 1.6
+    }
+  },
+  "pieces": [
+    {
+      "part": "legL",
+      "x": 56.6,
+      "y": 150.1,
+      "z": 1,
+      "rest": 0,
+      "parent": "torso"
+    },
+    {
+      "part": "legR",
+      "x": 87.2,
+      "y": 150.1,
+      "z": 1,
+      "rest": 0,
+      "parent": "torso"
+    },
+    {
+      "part": "footL",
+      "x": 51.3,
+      "y": 196.5,
+      "z": 2,
+      "rest": 0,
+      "parent": "legL"
+    },
+    {
+      "part": "footR",
+      "x": 81.5,
+      "y": 196.5,
+      "z": 2,
+      "rest": 0,
+      "parent": "legR"
+    },
+    {
+      "part": "armL",
+      "x": 34.9,
+      "y": 105.9,
+      "z": 3,
+      "rest": -7.0,
+      "parent": "torso"
+    },
+    {
+      "part": "armR",
+      "x": 93.0,
+      "y": 105.9,
+      "z": 3,
+      "rest": 7.0,
+      "parent": "torso"
+    },
+    {
+      "part": "torso",
+      "x": 47.6,
+      "y": 98.9,
+      "z": 4,
+      "rest": 0,
+      "parent": null
+    },
+    {
+      "part": "band",
+      "x": 46.8,
+      "y": 97.9,
+      "z": 5,
+      "rest": 0,
+      "parent": "torso"
+    },
+    {
+      "part": "head",
+      "x": 21.0,
+      "y": 0.0,
+      "z": 7,
+      "rest": 0,
+      "parent": "torso"
+    }
+  ],
+  "holes": [
+    {
+      "x": 50.2,
+      "y": 69.0,
+      "r": 14.3
+    },
+    {
+      "x": 110.6,
+      "y": 69.0,
+      "r": 14.3
+    }
+  ]
+}

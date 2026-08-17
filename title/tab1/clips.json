@@ -1,0 +1,157 @@
+{
+  "fps": 12,
+  "about": [
+    "TAB-1 on the title screen. Separate from `tab-1/rig/clips.json`, which is",
+    "the COMBAT vocabulary — hurt, hack, beaten, cheer, hit. Nothing in there is",
+    "usable here: those clips are 0.6-2.4s and they read as reactions, because a",
+    "reaction is what a fight needs. A title screen is the opposite problem. The",
+    "player is not doing anything and may be sitting on this frame for minutes,",
+    "so every clip here is 7-11 seconds, most of it spent HOLDING.",
+    "",
+    "── The rule that makes sequencing free ─────────────────────────────────",
+    "",
+    "Every clip starts at the rest pose and ends at the rest pose. Nothing eases",
+    "across a boundary, nothing blends, and the director can therefore cut from",
+    "any clip to any other clip on any frame without a transition — the two poses",
+    "either side of the cut are identical. Cut-out animation cannot crossfade",
+    "anyway: paper does not dissolve.",
+    "",
+    "── Why they are so slow ────────────────────────────────────────────────",
+    "",
+    "The temptation is a one-second wobble that snaps back, and it is wrong twice:",
+    "it reads as a loop the moment you have seen it twice, and it makes the",
+    "character look nervous. What sells a small paper robot standing alone in a",
+    "room is the HOLD — the four seconds it spends looking into the slot without",
+    "moving. So most keys here are far apart, and each clip has exactly one idea:",
+    "",
+    "  idle-breathe   the baseline. Almost nothing. A weight settle you notice",
+    "                 only if you watch for it.",
+    "  idle-look      turns its head down the corridor, holds a long beat, comes",
+    "                 back. The hold is the whole clip.",
+    "  idle-shift     unweights one leg, leans, and takes its time coming back.",
+    "                 The only clip that touches the legs while standing.",
+    "  idle-peer      leans out over the slot and looks into it. The story beat:",
+    "                 this is the shredder, and it is looking in.",
+    "  idle-check     lifts one arm, pauses as if reading it, lowers it. The one",
+    "                 clip with a deliberate, legible action.",
+    "  walk           a slow four-beat cycle, meant to be looped by the director",
+    "                 while it also translates the whole rig sideways.",
+    "",
+    "Arms rest at -7 and +7 degrees, so an arm track that wants to hang straight",
+    "goes to +7 / -7, not to 0."
+  ],
+  "clips": {
+    "idle-breathe": {
+      "dur": 8.0,
+      "tracks": {
+        "root":  [[0, {"y": 0}], [2.6, {"y": -1.2}], [5.2, {"y": 0.4}], [8, {"y": 0}]],
+        "torso": [[0, {"r": 0}], [2.8, {"r": 0.7}], [5.6, {"r": -0.4}], [8, {"r": 0}]],
+        "head":  [[0, {"r": 0}], [3.2, {"r": -1.1}], [6.0, {"r": 0.6}], [8, {"r": 0}]],
+        "armL":  [[0, {"r": 0}], [3.0, {"r": 1.6}], [6.2, {"r": -0.8}], [8, {"r": 0}]],
+        "armR":  [[0, {"r": 0}], [3.4, {"r": -1.8}], [6.6, {"r": 0.9}], [8, {"r": 0}]]
+      },
+      "zorder": {}
+    },
+
+    "idle-look": {
+      "dur": 9.5,
+      "tracks": {
+        "head":  [[0, {"r": 0}], [1.4, {"r": -13}], [2.0, {"r": -15}],
+                  [6.2, {"r": -15}], [7.4, {"r": 2}], [8.4, {"r": 0}]],
+        "torso": [[0, {"r": 0}], [1.8, {"r": -2.2}], [6.2, {"r": -2.2}],
+                  [7.6, {"r": 0.5}], [8.6, {"r": 0}]],
+        "root":  [[0, {"x": 0}], [1.8, {"x": -1.5}], [6.2, {"x": -1.5}], [8.2, {"x": 0}]],
+        "armL":  [[0, {"r": 0}], [2.0, {"r": -2.5}], [6.4, {"r": -2.5}], [8.4, {"r": 0}]],
+        "armR":  [[0, {"r": 0}], [2.0, {"r": 3.5}], [6.4, {"r": 3.5}], [8.4, {"r": 0}]]
+      },
+      "zorder": {}
+    },
+
+    "idle-shift": {
+      "dur": 8.5,
+      "tracks": {
+        "root":  [[0, {"r": 0, "y": 0}], [1.6, {"r": 2.4, "y": 1.2}],
+                  [5.4, {"r": 2.4, "y": 1.2}], [7.4, {"r": 0, "y": 0}]],
+        "torso": [[0, {"r": 0}], [1.8, {"r": -1.6}], [5.4, {"r": -1.6}], [7.6, {"r": 0}]],
+        "head":  [[0, {"r": 0}], [2.0, {"r": -2.4}], [5.4, {"r": -2.4}], [7.8, {"r": 0}]],
+        "legL":  [[0, {"r": 0}], [1.5, {"r": -4.5}], [5.2, {"r": -4.5}], [7.2, {"r": 0}]],
+        "footL": [[0, {"r": 0}], [1.5, {"r": 4.0}], [5.2, {"r": 4.0}], [7.2, {"r": 0}]],
+        "legR":  [[0, {"r": 0}], [1.5, {"r": 1.2}], [5.2, {"r": 1.2}], [7.2, {"r": 0}]],
+        "armL":  [[0, {"r": 0}], [1.9, {"r": 4.5}], [5.4, {"r": 4.5}], [7.6, {"r": 0}]],
+        "armR":  [[0, {"r": 0}], [1.9, {"r": -2.0}], [5.4, {"r": -2.0}], [7.6, {"r": 0}]]
+      },
+      "zorder": {}
+    },
+
+    "idle-peer": {
+      "dur": 11.0,
+      "tracks": {
+        "root":  [[0, {"y": 0, "r": 0}], [2.2, {"y": 2.5, "r": -3.5}],
+                  [7.4, {"y": 2.5, "r": -3.5}], [9.6, {"y": 0, "r": 0}]],
+        "torso": [[0, {"r": 0}], [2.4, {"r": -4.5}], [7.4, {"r": -4.5}], [9.8, {"r": 0}]],
+        "head":  [[0, {"r": 0}], [1.2, {"r": -3}], [2.8, {"r": -9}],
+                  [7.4, {"r": -9}], [8.8, {"r": 1.5}], [10.0, {"r": 0}]],
+        "armL":  [[0, {"r": 0}], [2.6, {"r": 7.5}], [7.4, {"r": 7.5}], [9.8, {"r": 0}]],
+        "armR":  [[0, {"r": 0}], [2.6, {"r": -7.5}], [7.4, {"r": -7.5}], [9.8, {"r": 0}]],
+        "legL":  [[0, {"r": 0}], [2.4, {"r": 2.0}], [7.4, {"r": 2.0}], [9.6, {"r": 0}]],
+        "legR":  [[0, {"r": 0}], [2.4, {"r": 2.0}], [7.4, {"r": 2.0}], [9.6, {"r": 0}]]
+      },
+      "zorder": {}
+    },
+
+    "idle-check": {
+      "dur": 9.0,
+      "tracks": {
+        "armR":  [[0, {"r": 0}], [1.3, {"r": -46}], [1.9, {"r": -54}],
+                  [5.6, {"r": -54}], [6.2, {"r": -48}], [7.6, {"r": 0}]],
+        "head":  [[0, {"r": 0}], [1.7, {"r": 5.5}], [2.2, {"r": 7}],
+                  [5.6, {"r": 7}], [7.0, {"r": -1}], [7.9, {"r": 0}]],
+        "torso": [[0, {"r": 0}], [1.9, {"r": 1.4}], [5.6, {"r": 1.4}], [7.8, {"r": 0}]],
+        "armL":  [[0, {"r": 0}], [2.1, {"r": -2.5}], [5.8, {"r": -2.5}], [8.0, {"r": 0}]],
+        "root":  [[0, {"y": 0}], [2.0, {"y": -0.8}], [5.8, {"y": -0.8}], [8.0, {"y": 0}]]
+      },
+      "zorder": {
+        "armR": [[0, 8]]
+      }
+    },
+
+    "walk": {
+      "dur": 1.9,
+      "tracks": {
+        "root":  [[0, {"y": 0}], [0.24, {"y": -1.8}], [0.48, {"y": 0}],
+                  [0.72, {"y": 0.6}], [0.95, {"y": 0}],
+                  [1.19, {"y": -1.8}], [1.43, {"y": 0}],
+                  [1.67, {"y": 0.6}], [1.9, {"y": 0}]],
+        "torso": [[0, {"r": 0}], [0.48, {"r": 1.4}], [0.95, {"r": 0}],
+                  [1.43, {"r": -1.4}], [1.9, {"r": 0}]],
+        "head":  [[0, {"r": 0}], [0.48, {"r": -1.8}], [0.95, {"r": 0}],
+                  [1.43, {"r": 1.8}], [1.9, {"r": 0}]],
+        "legL":  [[0, {"r": 16}], [0.48, {"r": 0}], [0.95, {"r": -16}],
+                  [1.43, {"r": 0}], [1.9, {"r": 16}]],
+        "legR":  [[0, {"r": -16}], [0.48, {"r": 0}], [0.95, {"r": 16}],
+                  [1.43, {"r": 0}], [1.9, {"r": -16}]],
+        "footL": [[0, {"r": -11}], [0.48, {"r": 3}], [0.95, {"r": 12}],
+                  [1.43, {"r": 3}], [1.9, {"r": -11}]],
+        "footR": [[0, {"r": 12}], [0.48, {"r": 3}], [0.95, {"r": -11}],
+                  [1.43, {"r": 3}], [1.9, {"r": 12}]],
+        "armL":  [[0, {"r": -13}], [0.95, {"r": 13}], [1.9, {"r": -13}]],
+        "armR":  [[0, {"r": 13}], [0.95, {"r": -13}], [1.9, {"r": 13}]]
+      },
+      "zorder": {}
+    },
+
+    "turn": {
+      "dur": 2.4,
+      "tracks": {
+        "root":  [[0, {"r": 0}], [0.5, {"r": -5}], [1.2, {"r": 0}], [1.7, {"r": 4}], [2.4, {"r": 0}]],
+        "torso": [[0, {"r": 0}], [0.6, {"r": 3.5}], [1.3, {"r": 0}], [1.8, {"r": -3}], [2.4, {"r": 0}]],
+        "head":  [[0, {"r": 0}], [0.4, {"r": -6}], [1.2, {"r": 0}], [1.6, {"r": 5}], [2.4, {"r": 0}]],
+        "legL":  [[0, {"r": 0}], [0.5, {"r": 9}], [1.1, {"r": -6}], [1.8, {"r": 3}], [2.4, {"r": 0}]],
+        "legR":  [[0, {"r": 0}], [0.5, {"r": -7}], [1.1, {"r": 8}], [1.8, {"r": -4}], [2.4, {"r": 0}]],
+        "armL":  [[0, {"r": 0}], [0.6, {"r": -9}], [1.4, {"r": 6}], [2.4, {"r": 0}]],
+        "armR":  [[0, {"r": 0}], [0.6, {"r": 10}], [1.4, {"r": -5}], [2.4, {"r": 0}]]
+      },
+      "zorder": {}
+    }
+  }
+}

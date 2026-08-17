@@ -1,0 +1,79 @@
+{
+  "word": "AIBREACH",
+  "cap": 380,
+  "right": 3086,
+  "letters": [
+    {
+      "ch": "A",
+      "src": "letters/0A.png",
+      "x": 300,
+      "y": 2360,
+      "w": 250,
+      "h": 380
+    },
+    {
+      "ch": "I",
+      "src": "letters/1I.png",
+      "x": 664,
+      "y": 2360,
+      "w": 111,
+      "h": 380
+    },
+    {
+      "ch": "B",
+      "src": "letters/2B.png",
+      "x": 1098,
+      "y": 2360,
+      "w": 236,
+      "h": 380
+    },
+    {
+      "ch": "R",
+      "src": "letters/3R.png",
+      "x": 1448,
+      "y": 2360,
+      "w": 246,
+      "h": 380
+    },
+    {
+      "ch": "E",
+      "src": "letters/4E.png",
+      "x": 1808,
+      "y": 2360,
+      "w": 210,
+      "h": 380
+    },
+    {
+      "ch": "A",
+      "src": "letters/5A.png",
+      "x": 2132,
+      "y": 2360,
+      "w": 249,
+      "h": 380
+    },
+    {
+      "ch": "C",
+      "src": "letters/6C.png",
+      "x": 2495,
+      "y": 2360,
+      "w": 236,
+      "h": 380
+    },
+    {
+      "ch": "H",
+      "src": "letters/7H.png",
+      "x": 2845,
+      "y": 2360,
+      "w": 241,
+      "h": 380
+    }
+  ],
+  "button": {
+    "src": "letters/button.png",
+    "variant": "button-red",
+    "x": 3326,
+    "y": 2340,
+    "w": 708,
+    "h": 420
+  }
+}
