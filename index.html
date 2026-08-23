@@ -4,10 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>BREACH 1 — The Greenhouse</title>
-    <script type="module" crossorigin src="./assets/breach-BhOP2MrB.js"></script>
+    <!--
+      THE MANIFEST IS HOW THE MUSIC STARTS WITHOUT A CLICK.
+
+      Chrome exempts an INSTALLED app from the autoplay gesture requirement
+      outright, and it will only offer to install a page that has a manifest and
+      a service worker. `public/sw.js` has the whole argument; the short version
+      is that this line and that file are the only lever a page has over a
+      policy that is otherwise a browser's to decide.
+    -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon/icon-192.png" />
+    <meta name="theme-color" content="#0b0c0d" />
+    <script type="module" crossorigin src="./assets/breach-B4ddY_8S.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/load-BLxcM4XC.js">
-    <link rel="modulepreload" crossorigin href="./assets/room-Dx7nwbi2.js">
-    <link rel="stylesheet" crossorigin href="./assets/breach-CJhygFm5.css">
+    <link rel="modulepreload" crossorigin href="./assets/room-ejcTTR6n.js">
+    <link rel="stylesheet" crossorigin href="./assets/breach-CsEVcp-h.css">
     <meta name="robots" content="noindex, nofollow" />
   </head>
   <body>
