@@ -41,7 +41,7 @@
   all tabs to get the fix" is not something anybody is going to do.
 */
 
-const VERSION = 'breach-2';
+const VERSION = 'breach-3';
 const SHELL = `${VERSION}-shell`;
 const IMMUTABLE = `${VERSION}-assets`;
 
